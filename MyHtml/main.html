@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    
+<style> 
+body {
+    background-color: #f0f0f0; 
+    text-align: center; 
+}
+
+.profile-section{
+    margin-top: 20px; 
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+    padding: 20px; 
+    background-color: #fff; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+    text-align: left; 
+    max-width: 400px; 
+    margin: 0 auto; 
+    display: none; 
+}
+
+.content-container{
+    border: 2px solid #ddd; 
+    border-radius: 10px;
+    padding: 20px; 
+    background-color: #fff; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px; 
+    text-align: left; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    display: none; 
+}
+
+.profile-section {
+    display: block; 
+}
+
+.profile-section img {
+    display: block; 
+    margin: 0 auto 20px; 
+    border-radius: 50%; 
+}
+
+.profile-details {
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 20px;
+    
+}
+
+button {
+    background-color: #0b98c7;
+    color: #fff; 
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    margin: 0 10px; 
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #43a6cd; 
+}
+
+.content-container.active {
+    display: block; 
+}
+</style>
+</head>
+<body>
+    <div class="profile-section" id="profile">
+        <img src="Profile.jpg" alt="Image of Batman" height="150" style="border-radius: 50%;">
+        <div class="profile-details">
+            <h1>BABAJAN M</h1>
+            <p><em>Studying in <strong><a href="https://newhorizoncollegeofengineering.in/">New Horizon College of Engineering</a></strong></em></p>
+            <p>I am a Computer Science Student here </p>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button onclick="showContent('projects')">Projects</button>
+        <button onclick="showContent('education')">Education</button>
+        <button onclick="showContent('skills')">Skills</button>
+        <button onclick="showContent('hobbies')">Hobbies</button>
+        <button onclick="showContent('contact')">Contact</button>
+    </div>
+
+    <br>
+   <br>
+
+    <div id="projects" class="content-container">
+        <h3>My Projects</h3>
+        <ul>
+            <li>Dual Lane Toll Plaza System</li>
+            <li>Hosptil Administration Application</li>
+            <li>E-Heathcare System Application</li>
+            <li>Easy Refurbishing</li>
+            <li>TDEE & Fitness Routines</li>
+        </ul>
+    </div>
+
+    <div id="education" class="content-container">
+        <h3>Education Qualification</h3>
+        <table border="1" cellspacing="5">
+            <thead>
+                <th>Qualification</th>
+                <th>College</th>
+            </thead>
+            <tr>
+                <td>SSLC</td>
+                <td>PCHS</td>
+            </tr>
+            <tr>
+                <td>PUC</td>
+                <td>VIPC</td>
+            </tr>
+        </table>
+    </div>
+  
+    <div id="skills" class="content-container">
+        <h3>Skills</h3>
+        <table border="1">
+            <tr>
+                <td>
+                    <table cellspacing="10">
+                        <tr>
+                            <td>HTML,CSS,JS</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>MY SQL</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        
+                    </table>
+                </td>
+                <td>
+                    <table cellspacing="10">
+                        <tr>
+                            <td>Java, Python</td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>C/C++</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="hobbies" class="content-container">
+        <h3>This is what I do for Fun</h3>
+        <ol start="1">
+            <li>Gaming</li>
+            <li>Singing</li>
+            <li>Watching movies</li>
+            <li>Playing with nephews</li>
+        </ol>
+    </div>
+
+    <div id="contact" class="content-container">
+        <h3>Contact Details</h3>
+        <p>Name : BABAJAN M <br>Ph no.: 9916828138 <br>Email : mohammedbabajan2002@gmail.com</p>
+    </div>
+
+   
+
+    <script>
+        function showContent(id) {
+           
+            var contents = document.getElementsByClassName("content-container");
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.remove("active");
+            }
+
+          
+            var content = document.getElementById(id);
+            content.classList.add("active");
+        }
+    </script>
+</body>
+</html>
+

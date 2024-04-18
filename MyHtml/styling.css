@@ -1,0 +1,33 @@
+
+body{
+    background-color: rgb(235, 245, 146);
+}
+
+hr{
+
+    /* border-style: dotted none none; */
+    border-style:  none;
+    border-top-style: dashed;
+    height: 0px;
+    width: 10%;
+    border-color: rgb(228, 166, 166);
+    border-width: 7px;
+}
+
+h1{
+    color: rgb(17, 21, 59);
+}
+
+p{
+    font-size: larger;
+    font-style:oblique;
+    color: rgb(17, 21, 59);
+}
+li{
+    font-size: medium;
+    font-style:oblique;
+    color: rgb(18, 67, 37);
+}
+h3{
+    color: rgb(191, 132, 233);
+}

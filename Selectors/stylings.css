@@ -1,0 +1,24 @@
+h1 {
+    color: blue;
+    font-size: 150px;
+    }
+
+/* class selectors */
+.Khan{
+    background-color: violet;
+}
+.Eggs{
+    background-color: brown;
+}
+.circular{
+    border-radius: 20%;
+}
+/* ID selectors */
+#heading{
+    color: black;
+}
+
+/* mouse hover */
+img:hover{
+    background-color: goldenrod;
+}
